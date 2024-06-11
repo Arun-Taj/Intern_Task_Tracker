@@ -1,0 +1,118 @@
+.task-cont{
+  display: flex;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  
+  
+}
+
+.task-cont .task {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffcfc;
+  padding: 10px;
+  margin: 5px 0;
+  width: 300px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  
+}
+
+.task-cont .completed {
+  background-color: #63bb3a;
+  
+}
+
+.task-cont .task .task-text {
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: left;
+  word-break: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.task-cont .checkmark{
+  display: flex;
+  margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    text-align: center;
+    
+    line-height: 20px;
+    cursor: pointer;
+    font-size:20px ;
+    
+    background-color: #fff;
+  
+}
+
+.task-cont .delete-button,
+.task-cont .edit-button,
+.task-cont .save-button,
+.task-cont .cancel-button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+
+.task-cont .edit-button,
+.task-cont .save-button,
+.task-cont .cancel-button {
+  background-color: blue;
+  color: white;
+}
+
+.task-cont .edit-button:hover,
+.task-cont .save-button:hover,
+.task-cont .cancel-button:hover {
+  background-color: darkblue;
+}
+
+.task-cont .delete-button:hover {
+  background-color: darkred;
+}
+
+.task-cont .edit-input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 6px;
+}
+@media (max-width: 600px) {
+  .task-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .task-cont .task .task-text,
+  .task-cont .task .edit-input,
+  .task-cont .task .delete-button,
+  .task-cont .task .edit-button,
+  .task-cont .task .save-button,
+  .task-cont .task .cancel-button {
+    margin: 5px 0;
+    width:100%;
+  } */
+  .task-cont .task .task-text{
+    width: 100%;
+    display: inline;
+  }
+
+  /* .task .delete-button,
+  .task .edit-button,
+  .task .save-button,
+  .task .cancel-button {
+    margin-left: 0;
+  } */
+}
